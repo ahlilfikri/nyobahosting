@@ -1,15 +1,16 @@
 import { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/home/index.jsx';
+import Home from './pages/home/index';
 
 const Routing = () => {
   return (
       <Fragment>
-        <Router>
+        <Home />
+        {/* <Router>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
             </Routes>
-        </Router>
+        </Router> */}
       </Fragment>
   );
 };
